@@ -1,0 +1,20 @@
+remain <- c(11 , 12 , 11 , 13)
+suits  <- c("speads" , "hearts" , "diamonds" , "clubs")
+remainSuits <- c(speads=11 , hearts = 13 , diamond = 11 , clubs = 11)
+drawn_ranks <- c(7 , 4 , "a" , 10 , "k" , 3 , 2 , "q")
+num_apples <- 3
+num_Oranges <- "six"
+print(remain)
+print(suits)
+names(remain) <- suits
+print(remain)
+print(str(remain))
+print(remain)
+print(str(remainSuits))
+print(is.vector(num_apples))
+print(length(num_apples))
+print(is.vector(num_Oranges))
+print(length(num_Oranges))
+print(drawn_ranks)
+print(class(drawn_ranks))
+print(length(drawn_ranks))

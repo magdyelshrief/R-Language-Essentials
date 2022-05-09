@@ -1,0 +1,21 @@
+#create matrix from 1 to 6 number of row (nrow=2), will be arranged row by row byrow=True
+matrix(1:6, nrow = 2, byrow = TRUE)
+matrix(1:3, nrow = 2, ncol = 3)
+cbind(1:3, 4:6)
+rbind(1:3, 4:6)
+matrix1 <- matrix(1:9,  byrow=T, nrow = 3)
+print(matrix1)
+matrix2 <- cbind(matrix1, c(10:12))
+print(matrix2)
+matrix3 <- rbind(matrix2 ,c(13,15))
+rownames(matrix3) <- c("rbind-1","rbind-2","rbind-3","rbind-4")
+colnames(matrix3) <- c("cbind-1", "cbind-2" ,"cbind-3", "cbind-4")
+print(matrix3)
+final_matrix <- matrix(1:6, byrow = T, nrow = 2, dimnames = list(c("row-1", "row-2"),c("col-1", "col-2" ,"col-3")))
+print(final_matrix)
+#Coercion when bind numeric matrix with character matrix and the same for vectors
+#all will be a character matrix or character vectors
+num  <- matrix(1:8 ,ncol = 2)
+char <- matrix(LETTERS[1:6], nrow = 4, ncol=3)
+final_matrix <- cbind(num, char)
+print(final_matrix)
